@@ -61,7 +61,7 @@ export default {
       }
       if(position.y < 0){
         if (window.confirm("いくぞ、準備はいいか?")) {
-          //TODO:ルーターにプッシュ
+          this.$router.push({path:"/battle"})
         }
       }else if(0 <= position.x < 25 && 0 <= position.y < 25){
         if(this.map[position.y][position.x] == 1){
